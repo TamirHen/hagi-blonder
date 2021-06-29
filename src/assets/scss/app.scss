@@ -1,3 +1,4 @@
+@use "colors";
 
 .leaves-background {
   position: absolute;
@@ -12,16 +13,24 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 5%;
+  box-sizing: border-box;
 
-  .section-home {
-    .logo {
-      margin: 100px 0;
-    }
+  .logo {
+    margin: 70px 0;
   }
 
-  .section-about-us {
+  section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 20px 0;
+
+    h1 {
+      color: colors.$clr-orange;
+      font-size: 110px;
+      font-weight: normal;
+    }
   }
+
 }

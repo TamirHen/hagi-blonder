@@ -9,7 +9,7 @@ import TextBox from "./components/TextBox";
 import config from './config.json';
 
 function App() {
-    const {aboutUs} = config;
+    const {aboutUs, services} = config;
     return (
         <>
             <LeavesBackground className="leaves-background"/>
@@ -23,7 +23,14 @@ function App() {
                 <section className="section-about-us">
                     {aboutUs?.map((textBox, index) => {
                         const {header, body, image} = textBox;
-                        return <TextBox key={'textbox-'+index} header={header} body={body} img={image} textSide={index % 2 === 0 ? 'right' : 'left'}/>;
+                        return <TextBox key={'aboutus-textbox-'+index} header={header} body={body} img={image} textSide={index % 2 === 0 ? 'right' : 'left'}/>;
+                    })}
+                </section>
+                <section className="section-services">
+                    <h1>{services.header}</h1>
+                    {services?.boxes.map((textBox, index) => {
+                        const {header, body, image} = textBox;
+                        return <TextBox key={'services-textbox-'+index} header={header}  body={body} img={image} textSide={index % 2 === 0 ? 'left' : 'right'} headerSize='m'/>;
                     })}
                 </section>
             </main>
