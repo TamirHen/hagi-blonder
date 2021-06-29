@@ -1,0 +1,23 @@
+@use "colors";
+
+.text-box {
+  display: flex;
+  height: 735px;
+  width: 100%;
+
+  .photo {
+    width: 450px;
+    height: auto;
+  }
+
+  .text-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      color: colors.$clr-cream;
+      font-size: 144px;
+      font-weight: normal;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+
+.leaves-background {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding-top: 30rem;
+  z-index: -10;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .section-home {
+    .logo {
+      margin: 100px 0;
+    }
+  }
+
+  .section-about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
