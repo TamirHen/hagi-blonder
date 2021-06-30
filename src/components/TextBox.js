@@ -15,9 +15,7 @@ const TextBox = ({header, body, img, direction, headerSize}) => {
                 </div>
             </div>
             :
-            <div className="text-box" style={{
-                flexDirection: direction === 'right' ? 'row' : 'row-reverse'
-            }}>
+            <div className={`text-box ${direction === 'right' ? 'direction-row' : 'direction-row-reverse'}`}>
                 <div className="image-wrapper">
                     <img src={img} alt={header}/>
                 </div>

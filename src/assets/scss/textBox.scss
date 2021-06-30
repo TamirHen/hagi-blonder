@@ -5,6 +5,14 @@
   align-items: center;
 }
 
+.direction-row {
+  flex-direction: row;
+}
+
+.direction-row-reverse {
+  flex-direction: row-reverse;
+}
+
 .text-box {
   display: flex;
   width: 100%;
@@ -87,7 +95,7 @@
 
 @media (max-width: 1000px) {
   .text-box {
-    flex-direction: column !important;
+    flex-direction: column;
 
     .image-wrapper {
       img {
@@ -102,11 +110,8 @@
 
 @media (max-width: 600px) {
   .text-box {
-    flex-direction: column !important;
-
     .image-wrapper {
       img {
-        object-fit: cover;
         width: 300px;
         height: 300px;
       }

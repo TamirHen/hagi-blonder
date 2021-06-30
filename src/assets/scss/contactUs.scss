@@ -63,12 +63,13 @@
   }
 
   .contact-us-location {
-    .location-photo {
+    img {
       width: 85%;
       height: 160px;
       margin-top: 20px;
       border: 2px solid colors.$clr-cream;
       border-radius: 15px;
+      object-fit: cover;
     }
   }
 }

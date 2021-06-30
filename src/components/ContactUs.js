@@ -65,7 +65,7 @@ const ContactUs = () => {
             </form>
             <div className="contact-us-location contact-us-card">
                 <h2>Our Location</h2>
-                <img src={locationPhoto} alt={address} className='location-photo'/>
+                <img src={locationPhoto} alt={address}/>
                 <p>{address}</p>
                 <Button variant="contained" type='submit'>
                     Get Directions

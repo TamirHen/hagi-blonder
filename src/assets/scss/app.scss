@@ -2,10 +2,14 @@
 
 .leaves-background {
   position: absolute;
-  top: 0;
   width: 100%;
   padding-top: 30rem;
   z-index: -10;
+  top: 3000px;
+
+  &:first-of-type {
+    top: 0;
+  }
 }
 
 main {
@@ -56,7 +60,6 @@ main {
 }
 
 
-
 @media (max-width: 1500px) {
   section {
   }
@@ -64,5 +67,40 @@ main {
 
 
 @media (max-width: 1200px) {
+  .logo {
+    margin-bottom: 0 !important;
+  }
 
+
+  .section-services {
+    .text-box {
+      flex-direction: column-reverse;
+    }
+
+    .two-in-row {
+      flex-direction: column;
+      text-align: start;
+
+      h1 {
+        align-self: flex-start;
+      }
+
+      .text-box {
+        flex-direction: column;
+
+        .image-wrapper {
+          order: 3;
+        }
+      }
+
+      .space {
+        display: none;
+      }
+    }
+
+  }
+
+  .section-gallery {
+    margin-top: 80px;
+  }
 }

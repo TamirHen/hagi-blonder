@@ -52,6 +52,7 @@ function App() {
     return (
         <>
             <LeavesBackground className="leaves-background"/>
+            <LeavesBackground className="leaves-background"/>
             <header className="header">
                 <Navbar/>
             </header>
