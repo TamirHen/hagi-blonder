@@ -1,8 +1,12 @@
 @use "colors";
 
+.text-box-column {
+  flex-direction: column;
+  align-items: center;
+}
+
 .text-box {
   display: flex;
-  height: 700px;
   width: 100%;
   margin: 20px 0;
 
@@ -12,12 +16,34 @@
     justify-content: center;
     height: 100%;
 
+    .column-box-image {
+      max-width: 500px;
+      max-height: 350px;
+      width: auto;
+      height: auto;
+    }
+
     img {
-      height: -webkit-fill-available;
+      max-height: 550px;
       width: auto;
       padding: 30px;
       border-radius: 60px;
     }
+  }
+
+  h1 {
+    color: colors.$clr-cream;
+    font-size: 110px;
+    font-weight: normal;
+    width: fit-content;
+  }
+
+
+  .m {
+    background-color: rgba(#387779, 70%);
+    border-radius: 30px;
+    padding: 20px 50px 25px;
+    font-size: 80px;
   }
 
   .text-wrapper {
@@ -25,16 +51,5 @@
     flex-direction: column;
     padding: 15px;
 
-    h1 {
-      color: colors.$clr-cream;
-      font-size: 110px;
-      font-weight: normal;
-
-    }
-
-    .m {
-      font-size: 90px;
-      background-color: rgba(#387779, 50%) ;
-    }
   }
 }

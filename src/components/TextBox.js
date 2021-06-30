@@ -1,29 +1,29 @@
 import React from 'react';
-import {Img} from 'react-image';
 
 import "../assets/scss/textBox.scss";
 
-const TextBox = ({header, body, img, textSide, headerSize}) => {
-
+const TextBox = ({header, body, img, direction, headerSize}) => {
     return (
-        textSide === 'right' ?
-            <div className="text-box">
+        direction === 'column' ?
+            <div className="text-box text-box-column">
+                <h1 className={headerSize}>{header}</h1>
                 <div className="image-wrapper">
-                    <img src={img} alt={header}/>
+                    <img src={img} alt={header} className={direction === 'column' && 'column-box-image'}/>
                 </div>
                 <div className="text-wrapper">
-                    <h1 className={headerSize}>{header}</h1>
                     <p>{body}</p>
                 </div>
             </div>
             :
-            <div className="text-box">
+            <div className="text-box" style={{
+                flexDirection: direction === 'right' ? 'row' : 'row-reverse'
+            }}>
+                <div className="image-wrapper">
+                    <img src={img} alt={header}/>
+                </div>
                 <div className="text-wrapper">
                     <h1 className={headerSize}>{header}</h1>
                     <p>{body}</p>
-                </div>
-                <div className="image-wrapper">
-                    <img src={img} alt={header}/>
                 </div>
             </div>
     )

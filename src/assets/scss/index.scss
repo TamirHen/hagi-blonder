@@ -7,12 +7,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 3000px;
+  background: rgb(69,125,128);
+  background: linear-gradient(0deg, rgba(69,125,128,1) 29%, rgba(90,159,159,1) 57%) no-repeat;
 }
 
 html {
-  background: rgb(69,125,128);
-  background: linear-gradient(0deg, rgba(69,125,128,1) 29%, rgba(90,159,159,1) 57%) no-repeat;
-  height: fit-content;
 }
 
 button {

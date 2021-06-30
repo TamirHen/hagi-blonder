@@ -18,6 +18,9 @@ main {
 
   .logo {
     margin: 70px 0;
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
   }
 
   section {
@@ -31,6 +34,23 @@ main {
       font-size: 110px;
       font-weight: normal;
     }
+  }
+
+  .section-services {
+    width: inherit;
+
+    .two-in-row {
+      display: flex;
+      justify-content: space-around;
+
+      .space {
+        width: 250px;
+      }
+    }
+  }
+
+  .section-gallery {
+    width: -webkit-fill-available;
   }
 
 }
