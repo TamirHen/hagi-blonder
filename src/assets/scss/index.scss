@@ -7,8 +7,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 3000px;
-  background: rgb(69,125,128);
-  background: linear-gradient(0deg, rgba(69,125,128,1) 29%, rgba(90,159,159,1) 57%) no-repeat;
+  background: rgb(69, 125, 128);
+  background: linear-gradient(0deg, rgba(69, 125, 128, 1) 29%, rgba(90, 159, 159, 1) 57%) no-repeat;
 }
 
 html {
@@ -32,4 +32,18 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
+}
+
+
+@media (max-width: 1500px) {
+  p {
+    font-size: 24px;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  p {
+    font-size: 20px;
+  }
 }

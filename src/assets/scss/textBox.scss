@@ -40,7 +40,7 @@
 
 
   .m {
-    background-color: rgba(#387779, 70%);
+    background-color: rgba(colors.$clr-blue, 70%);
     border-radius: 30px;
     padding: 20px 50px 25px;
     font-size: 80px;
@@ -50,6 +50,67 @@
     display: flex;
     flex-direction: column;
     padding: 15px;
+
+  }
+}
+
+@media (max-width: 1500px) {
+  .text-box {
+    h1 {
+      font-size: 80px;
+    }
+
+    .m {
+      font-size: 65px;
+      padding: 15px 40px 20px;
+      border-radius: 25px;
+    }
+
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .text-box {
+
+    h1 {
+      font-size: 50px;
+    }
+
+    .m {
+      font-size: 40px;
+      padding: 10px 30px 15px;
+      border-radius: 15px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .text-box {
+    flex-direction: column !important;
+
+    .image-wrapper {
+      img {
+        object-fit: cover;
+        width: 450px;
+        height: 450px;
+      }
+    }
+
+  }
+}
+
+@media (max-width: 600px) {
+  .text-box {
+    flex-direction: column !important;
+
+    .image-wrapper {
+      img {
+        object-fit: cover;
+        width: 300px;
+        height: 300px;
+      }
+    }
 
   }
 }

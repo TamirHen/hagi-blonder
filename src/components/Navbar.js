@@ -14,7 +14,7 @@ const Navbar = () => {
         <div className='navbar-wrapper'>
             <div className='hamburger-wrapper'>
                 <Hamburger toggled={isOpen} toggle={setOpen}
-                           duration={0.5} color={isOpen ? globalStyle.clrOrange : globalStyle.clrCream}/>
+                           duration={0.5} color={globalStyle.clrCream}/>
             </div>
             <nav className={isOpen ? 'nav-open' : 'nav-close'}>
                 <div className="home">

@@ -62,7 +62,7 @@ nav {
 @media (max-width: 1200px) {
 
   nav {
-    position: absolute;
+    position: fixed;
     background-color: colors.$clr-cream;
     flex-direction: column;
     align-items: flex-start;
@@ -89,6 +89,8 @@ nav {
 
   .hamburger-wrapper {
     display: block;
+    position: fixed;
+    background-color: colors.$clr-blue;
   }
 
   .nav-close {
