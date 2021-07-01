@@ -103,6 +103,7 @@
         width: 450px;
         height: 450px;
       }
+
     }
 
   }
@@ -114,6 +115,32 @@
       img {
         width: 300px;
         height: 300px;
+        padding-right: 0;
+        padding-left: 0;
+        border-radius: 25%;
+      }
+
+      .column-box-image {
+        max-width: 375px;
+      }
+    }
+
+  }
+}
+
+
+@media (max-width: 500px) {
+  .text-box {
+    .image-wrapper {
+      .column-box-image {
+        max-width: 275px;
+        max-height: 275px;
+      }
+
+      .text-wrapper {
+        h1 {
+          font-size: 44px;
+        }
       }
     }
 

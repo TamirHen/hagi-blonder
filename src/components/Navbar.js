@@ -12,7 +12,7 @@ const Navbar = () => {
 
     return (
         <div className='navbar-wrapper'>
-            <div className='hamburger-wrapper'>
+            <div className={`hamburger-wrapper ${isOpen && 'hamburger-nav-open'}`}>
                 <Hamburger toggled={isOpen} toggle={setOpen}
                            duration={0.5} color={globalStyle.clrCream}/>
             </div>

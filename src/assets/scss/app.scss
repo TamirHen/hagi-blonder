@@ -104,3 +104,35 @@ main {
     margin-top: 80px;
   }
 }
+
+@media (max-width: 800px) {
+  .section-services {
+
+    h1 {
+      font-size: 60px;
+    }
+  }
+
+  .section-contact-us {
+
+    h1 {
+      font-size: 60px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .section-services {
+
+    h1 {
+      font-size: 45px;
+    }
+  }
+
+  .section-contact-us {
+
+    h1 {
+      font-size: 45px;
+    }
+  }
+}
