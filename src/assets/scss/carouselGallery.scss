@@ -1,6 +1,6 @@
 .carousel-gallery {
-  width: 100%;
   height: 100%;
+  width: -webkit-fill-available;
 
   .thumbs {
     text-align: center;
@@ -8,30 +8,15 @@
   }
 
   .carousel-gallery-slide {
-    height: 500px;
+    //height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
 
     .carousel-image {
-      width: auto;
-      max-height: 450px;
+      //width: auto;
+      //max-height: 450px;
       border-radius: 35px;
-    }
-  }
-}
-
-
-@media (max-width: 600px) {
-  .carousel-gallery {
-    .carousel-gallery-slide {
-    }
-  }
-}
-
-@media (max-width: 500px) {
-  .carousel-gallery {
-    .carousel-gallery-slide {
     }
   }
 }

@@ -98,7 +98,7 @@
     flex-direction: column;
 
     .image-wrapper {
-      img {
+      img, .column-box-image {
         object-fit: cover;
         width: 450px;
         height: 450px;
@@ -113,15 +113,16 @@
   .text-box {
     .image-wrapper {
       img {
-        width: 300px;
-        height: 300px;
+        width: 350px;
+        height: 350px;
         padding-right: 0;
         padding-left: 0;
         border-radius: 25%;
       }
 
       .column-box-image {
-        max-width: 375px;
+        width: 350px;
+        height: 350px;
       }
     }
 
@@ -132,11 +133,6 @@
 @media (max-width: 500px) {
   .text-box {
     .image-wrapper {
-      .column-box-image {
-        max-width: 275px;
-        max-height: 275px;
-      }
-
       .text-wrapper {
         h1 {
           font-size: 44px;
@@ -144,5 +140,16 @@
       }
     }
 
+  }
+}
+
+@media (max-width: 400px) {
+  .text-box {
+    .image-wrapper {
+      img, .column-box-image {
+        width: 300px;
+        height: 300px;
+      }
+    }
   }
 }
