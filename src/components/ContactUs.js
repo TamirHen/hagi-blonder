@@ -20,7 +20,7 @@ const ContactUs = () => {
 
     return (
         <div className='contact-us-wrapper'>
-            <form
+            <form data-aos="fade-right"
                 className='contact-us-card'
                 onChange={onFormChangeHandler}
                 onSubmit={onSubmitHandler}
@@ -63,7 +63,7 @@ const ContactUs = () => {
                     Send
                 </Button>
             </form>
-            <div className="contact-us-location contact-us-card">
+            <div className="contact-us-location contact-us-card" data-aos="fade-left">
                 <h2>Our Location</h2>
                 <img src={locationPhoto} alt={address}/>
                 <p>{address}</p>
