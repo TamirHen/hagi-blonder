@@ -12,7 +12,7 @@ const ContactUs = () => {
             [e.target.name]: e.target.value
         })
     }
-    console.log(form);
+
     const onSubmitHandler = (e) => {
         e.preventDefault();
 

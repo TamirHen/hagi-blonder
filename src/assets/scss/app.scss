@@ -59,7 +59,7 @@ main {
   .section-gallery {
     width: -webkit-fill-available;
     max-width: 800px;
-    padding: 0 20px;
+    padding: 80px 20px 0;
   }
 
 }
@@ -102,10 +102,6 @@ main {
       }
     }
 
-  }
-
-  .section-gallery {
-    margin-top: 80px;
   }
 }
 

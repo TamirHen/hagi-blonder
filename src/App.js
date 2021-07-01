@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useRef} from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -15,9 +15,11 @@ import ContactUs from "./components/ContactUs";
 
 function App() {
     const {aboutUs, services, gallery, contactUs} = config;
+    const refs = useRef([]);
 
     useEffect(() => {
-        Aos.init({duration: 1000});
+        Aos.init({duration: 1700, once: true});
+        refs.current = refs.current.slice(0, 5);
     }, [])
 
     const renderServices = () => {
@@ -66,13 +68,13 @@ function App() {
             <LeavesBackground className="leaves-background"/>
             <LeavesBackground className="leaves-background"/>
             <header className="header">
-                <Navbar/>
+                <Navbar refs={refs}/>
             </header>
             <main>
-                <section className="section-home">
+                <section ref={sec => refs.current[0] = sec} className="section-home">
                     <Logo className="logo"/>
                 </section>
-                <section className="section-about-us">
+                <section ref={sec => refs.current[1] = sec} className="section-about-us">
                     {aboutUs?.map((textBox, index) => {
                         const {header, body, image, direction} = textBox;
                         return <TextBox key={'aboutus-textbox-' + index}
@@ -81,14 +83,14 @@ function App() {
                                         direction={direction ? direction : index % 2 === 0 ? 'right' : 'left'}/>;
                     })}
                 </section>
-                <section className="section-services">
+                <section ref={sec => refs.current[2] = sec} className="section-services">
                     <h1 data-aos="fade-down">{services.header}</h1>
                     {renderServices()}
                 </section>
-                <section className="section-gallery" data-aos="fade-down">
+                <section ref={sec => refs.current[3] = sec} className="section-gallery" data-aos="fade-down">
                     <CarouselGallery images={gallery}/>
                 </section>
-                <section className="section-contact-us">
+                <section ref={sec => refs.current[4] = sec} className="section-contact-us">
                     <h1 data-aos="fade-down">{contactUs.header}</h1>
                     <ContactUs/>
                 </section>

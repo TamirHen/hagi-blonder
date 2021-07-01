@@ -9,9 +9,11 @@ body {
   min-height: 3000px;
   background: rgb(69, 125, 128);
   background: linear-gradient(0deg, rgba(69, 125, 128, 1) 29%, rgba(90, 159, 159, 1) 57%) no-repeat;
+  overflow-x: hidden;
 }
 
 html {
+  scroll-behavior: smooth;
 }
 
 button {

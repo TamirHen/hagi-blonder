@@ -6,7 +6,12 @@
       "Services",
       "Gallery",
       "Contact Us"
-    ]
+    ],
+    "urls": {
+      "youtube": "www.youtube.com",
+      "facebook": "www.facebook.com",
+      "instagram": "www.instagram.com"
+    }
   },
   "aboutUs": [
     {
